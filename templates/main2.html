@@ -1,0 +1,350 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport"
+         content="width=device-width, initial-scale=1, user-scalable=yes">
+     
+      <link rel="stylesheet" type="text/css" href="static/css/raleway-font.css" />
+ <link rel="stylesheet" type="text/css" href="static/fonts/material-design-iconic-font/css/material-design-iconic-font.min.css" />
+  <!-- Jquery -->
+  <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css" />
+  <!-- Main Style Css -->
+    <link rel="stylesheet" href="static/css/style.css" >
+    <script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+    </head>
+    <body>
+      <div class="page-content" style="background-image: url('static/images/green_back.jpeg')">
+    <div class="wizard-v1-content">
+      <div class="wizard-form">
+            <form class="form-register" id="form-register" role = "form" action="#" method="post">
+              <div id="form-total">
+                <!-- SECTION 1 -->
+                  <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-account"></i></span>
+                    <span class="step-number">Step 1</span>
+                    <span class="step-text">Enter Basic Info</span>
+                  </h2>
+                  <section>
+                      <div class="inner">
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="city">City of Residence*</label>
+             <!--       <input type="text" placeholder="Username" class="form-control" id="username" name="username" required> -->
+                    <select name="city" id="city-type" class="form-control">
+                      <option value="" disabled selected>Select City of Residence</option>
+                      <option value="Metro">Metro</option>
+                      <option value="Non-Metro">Non-Metro</option>
+                    </select>
+                  </div>
+                </div>
+                <div class = "form-row">
+                    <div class ="form-holder form-holder-2">
+                      <label for="sex">Sex*</label>
+                      <select name="sex" id="sex" class="form-control">
+                      <option value="" disabled selected>Select Sex</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+
+                    </select>
+                </div>
+              </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                      <label for="age">Age group*</label>
+                      <select name="age" id="year" class="form-control">
+                      <option value="" disabled selected>Select Age Group</option>
+                      <option value="21-59">21-59</option>
+                      <option value=">60">>69</option>
+
+                    </select>
+
+                </div>
+              </div>
+                <div class="form-row">
+                  <div class="form-holder">
+                    <label for="year">Assesment Year*</label>
+                      <select name="year" id="year" class="form-control">
+                      <option value="" disabled selected>Select Assesment Year</option>
+                      <option value="2020-21">2020-21</option>
+                      <option value="2019-20">2019-20</option>
+                      <option value="2018-19">2018-19</option>
+
+                    </select>
+
+                </div>
+              </div>
+            </div>
+                  </section>
+            <!-- SECTION 2 -->
+                  <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+                    <span class="step-number">Step 2</span>
+                    <span class="step-text">HRA Calculator</span>
+                  </h2>
+                  <section>
+                      <div class="inner">
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="salary">Enter Annual Basic Salary*</label>
+                    <input type="text" placeholder="Salary" class="form-control" id="salary" name="salary" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="hra">Enter Annual Home Rent Allowance*</label>
+                    <input type="text" placeholder="HRA" class="form-control" id="hra" name="hra" required>    
+                  </div>
+                </div>
+                <div class="form-row"> 
+                  <div class="form-holder form-holder-2">
+                    <label for="rent">Enter the Annual Rent Paid*</label>
+                    <input type="text" name="rent" class="rent" id="rent" placeholder="Annual Rent Paid">
+                  </div>
+                </div>
+              </div>
+                  </section>
+                  <!-- SECTION 3 -->
+                 <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+                    <span class="step-number">Step 3</span>
+                    <span class="step-text">Other Income from Salary</span>
+                  </h2>
+                  <section>
+                      <div class="inner">
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="spa">Special Allowance*</label>
+                    <input type="text" placeholder="Enter Special Allowance" class="form-control" id="spa" name="spa" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="lta">Leave Travel Allowance*</label>
+                    <input type="text" placeholder="LTA" class="form-control" id="lta" name="lta" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="exp">Expense on Travel*</label>
+                    <input type="text" name="exp" class="exp" id="exp" placeholder="Expense on Travel">
+                  </div>
+                </div>
+              </div>
+                  </section>
+                  <!--SECTION 4 -->
+                   <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+                    <span class="step-number">Step 4</span>
+                    <span class="step-text">Income from Other Soucres</span>
+                  </h2>
+                  <section>
+                      <div class="inner">
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                  <i class="zmdi zmdi-info"  data-toggle="tooltip" data-placement="top" title="Tax Deduction till Rs10000 only!"></i>
+                    <label for="interest">Interest on Savings Accounts*</label>
+                    <input type="text" placeholder="Interest" class="form-control" id="interest" name="interest" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="fda">Interest from Fixed Deposit Account*</label>
+                    <input type="fda" placeholder="FDA" class="form-control" id="fda" name="fda" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="agr">Agricultural Income*</label>
+                    <input type="text" placeholder="agr" class="agr" id="agr" name="agr" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="gifts">Gifts-Winnings-Lottery*</label>
+                    <input type="gifts" placeholder="Gifts" class="form-control" id="gifts" name="gifts" required>    
+                  </div>
+                </div>
+
+              </div>
+                  </section>
+              <!--SECTION 5 -->
+                   <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-card"></i></span>
+                    <span class="step-number">Step 5</span>
+                    <span class="step-text">Deductions</span>
+                  </h2>
+                  <section>
+                      <div class="inner">
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="ppf">Public Provident Fund Account Deposits*</label>
+                    <input type="text" placeholder="PPF Account Deposits" class="form-control" id="ppf" name="ppf" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="epf">Employee Provident Fund*</label>
+                    <input type="text" placeholder="EPF" class="form-control" id="epf" name="epf" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="elss">ELSS*</label>
+                    <input type="text" placeholder="ELSS" class="form-control" id="elss" name="elss" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="lip">Life Insurance Premium*</label>
+                    <input type="textt" placeholder="Enter Life Insurance Premium" class="form-control" id="lip" name="lip" required>    
+                  </div>
+                </div>
+                <div class = "form-row">
+                <div class="form-holder">
+                <label>Medical Insurance Premium</label>
+                    <br>
+                </div>
+              </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-3">
+            
+                    <label for="mip1">For Self and Family</label>
+                    <input type="text" name="mip1" class="mip1" id="mip1" placeholder="">
+                  </div>
+                  <div class="form-holder">
+                    <label for="mip2">For Parents</label>
+                    <input type="text" name="mip2" class="mip2" id="mip2" placeholder="">
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="fees">Tution Fees for Children*</label>
+                    <input type="text" placeholder="Enter Yearly Tution Fees Paid" class="form-control" id="fees" name="fees" required>    
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="nps">Contribution made towards NPS/NPF/NSC*</label>
+                    <input type="text" placeholder="nps" class="form-control" id="nps" name="nps" required>    
+                  </div>
+                </div><div class="form-row">
+                  <div class="form-holder form-holder-2">
+                    <label for="don">Donations*</label>
+                    <input type="text" placeholder="Enter amount of Donations made in this year" class="form-control" id="don" name="don" required>    
+                  </div>
+                </div>
+              </div>
+            </section>
+              <!-- SECTION 3 -->
+                  <h2>
+                    <span class="step-icon"><i class="zmdi zmdi-receipt"></i></span>
+                    <span class="step-number">Step 6</span>
+                    <span class="step-text">Confirm Your Details</span>
+                  </h2>
+                  <section>
+                  <div class="inner">
+
+                 <h3>Comfirm Details</h3>
+                <div class="form-row table-responsive">
+                  <table class="table">
+                    <tbody>
+                      <tr class="space-row">
+                        <th>Annual Basic Salary:</th>
+                        <td id="salary-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>HRA:</th>
+                        <td id="hra-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Rent Paid Annually:</th>
+                        <td id="rent-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Special Allowance:</th>
+                        <td id="spa-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Travel Allowance:</th>
+                        <td id="lta-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Interest From Savings Account:</th>
+                        <td id="interest-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Interest From Fixed Deposit Account:</th>
+                        <td id="fda-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Agricultural Income:</th>
+                        <td id="agr-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Gifts-Winnings-Lottery:</th>
+                        <td id="gifts-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>PPF Account Deposits:</th>
+                        <td id="ppf-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Employee Provident Fund:</th>
+                        <td id="epf-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>ELSS:</th>
+                        <td id="elss-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Life Insurance Premium:</th>
+                        <td id="lip-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Medical Insurance Premium For Self and Family:</th>
+                        <td id="mip1-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Medical Insurance Premium For Parents:</th>
+                        <td id="mip2-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Contibution towards NPS/NPF/NSC:</th>
+                        <td id="nps-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Tuition Fees For Children:</th>
+                        <td id="fees-val"></td>
+                      </tr>
+                      <tr class="space-row">
+                        <th>Donations:</th>
+                        <td id="don-val"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              <input type="submit" name="submit" class="submit" id="submit" href = "final2.html">
+
+              </div>
+                </section>
+           </div>
+          </form>
+      </div>
+    </div>
+  </div>
+  <script src="static/js/jquery-3.3.1.min.js" /></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js" /></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js" /></script>
+  <script src="static/js/jquery.steps.js" /></script>
+  <script src="static/js/main.js" /></script>
+  
+</body>
+</html>
+     
+     
